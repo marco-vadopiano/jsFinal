@@ -21,8 +21,10 @@ footer {
     color: #ffffff;
 }
 h1 {
-    display: inline-block;
-    width: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    text-align: center;
+    width: 70%;
     margin: 0;
 }
 p {
