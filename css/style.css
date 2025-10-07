@@ -37,7 +37,7 @@ body {
 /* .preview{
 } */
 .images .preview {
-		width:20%;
+		width:8%;
     flex: 1 1 calc(33.3% - 50px);
     border: 5px solid black;
 }
