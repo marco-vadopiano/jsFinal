@@ -1,54 +1,63 @@
-
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Modern Gallery</title>
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src = "js/script.js"></script>
 </head>
-<body>
-  <div id="main-content-link">
-    <a href="#main-content">Skip to main content</a>
-  </div>
-  <header>
-    <h1>Modern Gallery</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="chi-siamo.html">At the sea</a></li>
-        <li><a href="contatti.html">In a city</a></li>
-      </ul>
-    </nav>
-  </header>
+<body onload="loaded()">
+	<script>
+		let myArray = [
+			1,2,3,4,5
+		];
+		console.log(myArray);
+	</script>
+	
+	<div id = "image">
+		<p id = "imageText0"></p>
+		<p id = "imageText1"></p>
+		<p id = "imageText2">Hover over an image below to display here.</p>
+	</div>
+	<div class="images">
+		<img class = "preview" alt = "Canyon" 
+			src = "https://picsum.photos/id/1015/600/400.jpg" 
+			onmouseover = "upDate(this)" onmouseout = "unDo()" 
+			onfocus="upDate(this)" onblur="unDo()" 
+			>
+		
+		<img class = "preview" alt = "Covered dog" 
+			src = "https://picsum.photos/id/1025/600/400.jpg" 
+			onmouseover = "upDate(this)" onmouseout = "unDo()"
+			onfocus="upDate(this)" onblur="unDo()" 
+			>
+		
+			<img class = "preview" alt = "Waterfall" 
+			src = "https://picsum.photos/id/1035/600/400.jpg" 
+			onmouseover = "upDate(this)" onmouseout = "unDo()"
+			onfocus="upDate(this)" onblur="unDo()" 
+			>
 
-  <main id="main-content">
-    <section class="gallery">
-      <img src="https://picsum.photos/id/1015/600/400" alt="Canyon">
-      <img src="https://picsum.photos/id/1025/600/400" alt="Covered dog">
-      <img src="https://picsum.photos/id/1035/600/400" alt="Waterfall">
-      <img src="https://picsum.photos/id/1016/600/400" alt="Red mountain">
-      <img src="https://picsum.photos/id/1018/600/400" alt="Green mountain">
-      <img src="https://picsum.photos/id/1023/600/400" alt="Byke jump">
-      <img src="https://picsum.photos/id/1028/600/400" alt="Winter">
-      <img src="https://picsum.photos/id/1036/600/400" alt="Winter tent">
-    </section>
-  </main>
+			<img class = "preview" alt = "Red mountain" 
+			src = "https://picsum.photos/id/1016/600/400.jpg" 
+			onmouseover = "upDate(this)" onmouseout = "unDo()"
+			onfocus="upDate(this)" onblur="unDo()" 
+			>
 
-  <footer>
-    <section class="privacy-policy">
-      <p><a href="#">Privacy Policy</a></p>
-    </section>
-    <section class="copyright">
-      <p>&copy; 2025 Marco Bettini - All rights reserved.</p>
-    </section>
-    <section class="social-media">
-      <p>
-        <a href="https://www.facebook.com" aria-label="Facebook"><img src="img/facebook_icon.png" alt="Facebook"></a>
-        <a href="https://www.twitter.com" aria-label="Twitter"><img src="img/twitter_icon.png" alt="Twitter"></a>
-        <a href="https://www.instagram.com" aria-label="Instagram"><img src="img/instagram_icon.png" alt="Instagram"></a>
-      </p>
-    </section>
-  </footer>
+			<img class = "preview" alt = "Green mountain" 
+			src = "https://picsum.photos/id/1018/600/400.jpg" 
+			onmouseover = "upDate(this)" onmouseout = "unDo()"
+			onfocus="upDate(this)" onblur="unDo()" 
+			>
+
+			<img class = "preview" alt = "Winter tent" 
+			src = "https://picsum.photos/id/1036/600/400.jpg" 
+			onmouseover = "upDate(this)" onmouseout = "unDo()"
+			onfocus="upDate(this)" onblur="unDo()" 
+			>
+	</div>
+
+  <script  src="js/script.js"></script>
+
 </body>
 </html>
